@@ -50,7 +50,7 @@ M31Halo = ComponentMass('M31_000.txt', 1)
 M31Disk = ComponentMass('M31_000.txt', 2)
 M31Bulge = ComponentMass('M31_000.txt', 3)
 M31total = M31Halo + M31Disk + M31Bulge
-# the above 4 lines is the different masses for Andromeda Galaxy
+# different masses for Andromeda Galaxy
 # Halo, Disk, Bulge, and total mass of galaxy
 
 
@@ -58,7 +58,7 @@ M33Halo = ComponentMass('M33_000.txt', 1)
 M33Disk = ComponentMass('M33_000.txt', 2)
 M33Bulge = ComponentMass('M33_000.txt', 3)
 M33total = M33Halo + M33Disk + M33Bulge
-# the above 4 lines is the different masses for M33
+# different masses for M33
 # Halo, Disk, Bulge, and total mass of galaxy
 
 
@@ -66,14 +66,14 @@ LocalHalo = MWHalo + M31Halo + M33Halo
 LocalDisk = MWDisk + M31Disk + M33Disk
 LocalBulge = MWBulge + M31Bulge + M33Bulge
 Localtotal = MWtotal + M31total + M33total
-# the above 4 lines is the different masses for the Local Group
+# different masses for the Local Group
 # Halo, Disk, Bulge, and total masses of Local Group
 
 MWstellar = MWDisk+MWBulge
 M31stellar = M31Disk+M31Bulge
 M33stellar = M33Disk+M33Bulge
 Localstellar = LocalDisk+LocalBulge
-# the above 4 lines is the stellar values for the galaxies and the Local Group
+# stellar values for the galaxies and the Local Group
 # will be used later
 
 
@@ -81,7 +81,7 @@ fbarMW = ((MWstellar) / (MWtotal))
 fbarM31 = ((M31stellar) / (M31total))
 fbarM33 = ((M33stellar) / (M33total))
 fbarLocal = ((Localstellar) / (Localtotal))
-# the above 4 lines is Baryon fractions for the galaxies and the Local Group
+# Baryon fractions for the galaxies and the Local Group
 # using Disk + Bulge masses and dividing by total mass
 
 
