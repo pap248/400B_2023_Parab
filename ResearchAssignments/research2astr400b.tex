@@ -1,0 +1,109 @@
+\documentclass{report}
+\usepackage{graphicx}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{ASTR 400B}\\Research Assignment 2}
+\author{\huge{Author: Paarth Parab}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+
+\pagebreak
+\section*{Introduction}
+
+\paragraph{Proposed Topic}
+\paragraph{}
+For my project I am going to study the fate of the stars in M31, that
+are the same distance from the center of the galaxy like our sun is, 8 kpc away from the center of the galaxy. This is for the merger process and after the merger completes. 
+
+\paragraph{Why this matters}
+\paragraph{}
+Knowing what happens to these stars and running simulations will tell us more about what could possibly happen to our solar system and the Milky Way, and just the general structure as well for M31 at this distance within. We can also find out what happens to the stars physically and chemically at this distance, and see how it impacts that region for the dust and gas. We can also find out the change of velocities, and then find the new distance these stars will be at after the merger.
+
+\paragraph{Current Understanding}
+\paragraph{}
+By the time the collision begins, our Sun will be a red giant and will have already ate up Mercury, Venus, and maybe Earth. We also know that when the merger takes place the final product galaxy will end as a giant elliptical, changing the structure for the spiral arms and the dust and gas ratios within the distance. The Sun will most likely end up at a larger distance from the center of the Milky Way and Andromeda merged galaxy, than it is currently from the center of the Milky Way. Possibly more than 50 kpc.
+Knowing that the galaxies are fairly similar in many characteristics, we can use our own estimation of the Sun to help find what could happen to the M31 stars. 
+This information was also found from the simulation paper that I will cite later.
+
+\paragraph{Questions in field}
+\paragraph{}
+Active questions in the field include:
+\begin{itemize}
+  \item How will the velocity of the solar systems change?
+  \item How will the local density of stars change? 
+  \item How could the stars pass by the systems and potentially change the system structure as well as the stars compositions?
+  \item If Earth is still around, how could life be impacted?
+  \item As well as many more questions in this field. I will try to attack as many as I can.
+\end{itemize}
+
+\paragraph{}
+Below are three papers that I will use for my project. 
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{citations.bib}
+
+\paragraph{Image from paper}
+\paragraph{}
+I will be using this image, graph, from the simulation paper to motivate my work. 
+\paragraph{}
+\begin{figure}[h]
+\graphicspath{ {/home/} }
+\includegraphics[width=6cm, height=4cm]{research2image}
+\end{figure}
+
+This image is from the simulation paper and is Figure 8.
+This is the radial distribution of candidate suns with respect to the center of the MW–M31 remnant, at the end of the N-body simulation (t = 10Gyr) for the canonical model. The red dashed line shows the current distance of about 8.29kpc of the Sun from the center of the Milky Way.
+
+
+
+\section*{The Proposal}
+\subsection*{Question(s) being addressed}
+\paragraph{}
+
+The main questions I will be looking at are:
+\begin{itemize}
+  \item How do the positions of the Sun analogs change? (In merged remnant vs. today)
+  \item Do any become unbound? if so, what percentage?
+\end{itemize}
+
+\subsection*{Approach to Questions}
+\paragraph{}
+
+To find the positions of the Sun analogs, I will use the data for the stars that are within 8 - 10 kpc of the center in M31 and track the star density as the merger takes place for this region. Seeing how many stars are within this distance before the merger begins, then seeing how many are there after the merger finishes. Also seeing how the star density changes at the different regions around the center, and going outward to see how the other regions changed as well. 
+I will use code that finds the percent of stars within 8kpc before the merger then after. 
+To find the amount of stars that get unbound, I will track certain regions of M31 and see how the star density changes, as well as trying to find the escape velocities, of the specific regions. Then to find the percentage I will use the same methodology as the first question. 
+
+\subsection*{Methodology Figure}
+\paragraph{}
+
+\begin{figure}[h]
+\graphicspath{ {/home/} }
+\includegraphics[width=10cm, height=5cm]{image2research2}
+\end{figure}
+
+This figure shows the distribution of luminous particles at the end of the N-body simulation (t = 10Gyr) for the canonical model. From left to right, particles originating in the MW and M31. The color scale indicates the surface mass density. I will use this to find the star densities as a function of the merger remnant vs. time. 
+
+\subsection*{Hypothesis}
+\paragraph{}
+
+I believe that within 8kpc of the center of the galaxy for M31, the amount of stars will be less. More specifically I believe that many other stars will occupy this space, and many stars from before will be much farther. So less stars than before the merger, but many new stars in this region that came from further. The fate of the stars in this region to me is very random, many stars being pushed further, and some going through collisions and potential chemical changes. I believe this happens from the potential collisions between stars, as well as the general structure of the MW - M31 remnant changing and settling in to a new structure, which will be elliptical.
+
+
+
+
+
+
+
+
+
+\end{document}
