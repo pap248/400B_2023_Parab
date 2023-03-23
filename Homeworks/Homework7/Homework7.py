@@ -142,7 +142,7 @@ class M33AnalyticOrbit:
         disk_a = self.HernquistAccel(self.Mdisk, self.rdisk, r)
         bulge_a = self.HernquistAccel(self.Mbulge, self.rbulge, r)
         
-        sum_a = np.sum(np.array([halo_a, bulge_a, disk_a]))
+        sum_a = np.sum(np.array([halo_a, disk_a, bulge_a]))
         
         # return the SUM of the output of the acceleration functions - a vector
         return sum_a
