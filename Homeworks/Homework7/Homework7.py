@@ -79,20 +79,17 @@ class M33AnalyticOrbit:
         ### get the mass of each component in M31 disk
         self.rdisk = 5
 
-        self.Mdisk = ComponentMass("M31_000.txt", 2) * 1e12 
-        # above value should be 0.120
+        self.Mdisk = 0.120 # from assignment 3
         
         ### bulge
         self.rbulge = 1
 
-        self.Mbulge = ComponentMass("M31_000.txt", 3) * 1e12
-        # above value should be 0.019
+        self.Mbulge = 0.019 # assignment 3
         
         # Halo
         self.rhalo = 62 # scale length from assignment 5 for M31
 
-        self.Mhalo = ComponentMass("M31_000.txt", 1) * 1e12
-        # above value should be 1.921
+        self.Mhalo = 1.921 # assignment 3
     
     def HernquistAccel(self, M , r_a , r):
         # r is vector
