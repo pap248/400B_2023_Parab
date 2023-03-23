@@ -135,9 +135,9 @@ class M33AnalyticOrbit:
         """ This function sums all acceleration vectors from each galaxy component"""
         
         # below is the accelerations for the hernquist profile for each ptype
-        halo_a = self.HernquistAccel(self.Mhalo, self.rhalo, r)
-        disk_a = self.HernquistAccel(self.Mdisk, self.rdisk, r)
-        bulge_a = self.HernquistAccel(self.Mbulge, self.rbulge, r)
+        halo_a = HernquistAccel(self.Mhalo, self.rhalo, r)
+        disk_a = HernquistAccel(self.Mdisk, self.rdisk, r)
+        bulge_a = HernquistAccel(self.Mbulge, self.rbulge, r)
         
         sum_a = np.sum(np.array([halo_a, disk_a, bulge_a]))
         
