@@ -79,20 +79,17 @@ class M33AnalyticOrbit:
         ### get the mass of each component in M31 disk
         self.rdisk = 5
 
-        self.Mdisk = ComponentMass("M31_000.txt", 2) * 1e12 
-        # above value should be 0.120
+        self.Mdisk = 0.120 # from assignment 3
         
         ### bulge
         self.rbulge = 1
 
-        self.Mbulge = ComponentMass("M31_000.txt", 3) * 1e12
-        # above value should be 0.019
+        self.Mbulge = 0.019 # assignment 3
         
         # Halo
         self.rhalo = 62 # scale length from assignment 5 for M31
 
-        self.Mhalo = ComponentMass("M31_000.txt", 1) * 1e12
-        # above value should be 1.921
+        self.Mhalo = 1.921 # assignment 3
     
     def HernquistAccel(self, M , r_a , r):
         # r is vector
@@ -102,7 +99,7 @@ class M33AnalyticOrbit:
         It will return the acceleration vector from a Hernquist potential."""
         
         ### store the magnitude of the position vector
-        rmag = np.sqrt(r.dot(r)) # takes dot product and then takes magnitude to make easier
+        rmag = np.sqrt(r.dot(r)) # easiest way to get magnitude
         
         ### store the Acceleration
         Hern = - (self.G * M / (rmag * (r_a + rmag) ** 2) )* r
@@ -142,7 +139,7 @@ class M33AnalyticOrbit:
         disk_a = self.HernquistAccel(self.Mdisk, self.rdisk, r)
         bulge_a = self.HernquistAccel(self.Mbulge, self.rbulge, r)
         
-        sum_a = np.sum(np.array([halo_a, bulge_a, disk_a]))
+        sum_a = np.sum(np.array([halo_a, disk_a, bulge_a]))
         
         # return the SUM of the output of the acceleration functions - a vector
         return sum_a
