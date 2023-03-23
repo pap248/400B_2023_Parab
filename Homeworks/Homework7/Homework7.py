@@ -99,7 +99,7 @@ class M33AnalyticOrbit:
         It will return the acceleration vector from a Hernquist potential."""
         
         ### store the magnitude of the position vector
-        rmag = np.sqrt(r.dot(r)) # takes dot product and then takes magnitude to make easier
+        rmag = np.sqrt(r.dot(r)) # easiest way to get magnitude
         
         ### store the Acceleration
         Hern = - (self.G * M / (rmag * (r_a + rmag) ** 2) )* r
