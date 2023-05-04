@@ -317,6 +317,8 @@ def density_contour(xdata, ydata, nbins_x, nbins_y, ax=None, **contour_kwargs):
 radial values and find the sun analogs radially, then use those indexes for
 the following snapshots to follow those particles'''
 
+'''beginning my process for the images'''
+
 
 # Create a COM of object for M31 Disk Using Code from Assignment 4
 COMD = CenterOfMass("M31_000.txt",2)
