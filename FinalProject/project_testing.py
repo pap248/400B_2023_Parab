@@ -261,6 +261,8 @@ import scipy.optimize as so
 '''apologies for the hard code, it was difficult to do the loop for the specific
 values in each snap for each array'''
 
+'''beginning my code for the graph'''
+
 
 # Create a COM of object for M31 Disk Using Code from Assignment 4
 COMD = CenterOfMass("M31_000.txt",2)
